@@ -19,7 +19,8 @@
 </head>
 <body>
     <header>
-        <div class="navbar bg-base-100 shadow-sm">
+       <section>
+         <div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -47,8 +48,8 @@
     </ul>
   </div>
 </div>
-    </header>
-    <!-- Hero Section -->
+       </section>
+       <!-- Hero Section -->
      <section class=" flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
         <!-- Content Div -->
          <div class=" flex-1 text-center md:text-left">
@@ -61,35 +62,37 @@
             <img class="rounded-full"  src="./assets/my-photo-logo.png" alt="">
          </div>
      </section>
-     <!-- Learn Section -->
-      <section class="w-11/12 mx-auto my-10">
+    </header>
+    
+    <!-- Main Section -->
+    <main class="w-11/12 mx-auto">
+       <!-- Learn Section -->
+      <section class=" my-10">
         <div class=" text-center md:text-left">
             <h1 class=" text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Let's</span> Learn Vocabulary</h1>
 
             <!-- Level button -->
              <div class="flex  gap-2 flex-wrap justify-center" id="level-container"></div>
       </section>
-      <section class="w-11/12 mx-auto ">
+      <section class=" ">
         <div class="flex justify-center items-center">
           <input id="search-input" class="input" type="text" placeholder="Search Vocabulary Now">
           <button id="search-btn" class="btn btn-primary">Search</button>
         </div>
       </section>
       <!-- Word by lessons -->
-       <section id="word-container" class="w-11/12 mx-auto my-10 p-10 bg-gray-100 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+       <section id="word-container" class=" my-10 p-10 bg-gray-100 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div class="text-center col-span-full rounded-r-xl py-10 space-y-6">
           <p class="text-xl font-medium text-gray-400">আপনি এখনো কোনো Lesson Select করেননি</p>
           <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
         </div>
        
        </section>
-       <section id="spinner" class="w-11/12 mx-auto hidden">
+       <section id="spinner" class=" hidden">
         <div class="flex justify-center items-center">
           <span class="loading loading-bars loading-xl"></span>
         </div>
        </section>
-    <!-- Main Section -->
-    <main>
 
       <!-- Modal -->
       <section>
@@ -111,9 +114,105 @@
 
     
       </section>
+      <!-- Frequently Asked Questions -->
+       <section class="space-y-3 my-10">
+        <h2 class="text-center text-2xl font-bold my-10"> <span class="text-sky-400">Frequently</span> Asked Questions</h2>
+       
+ <div class="collapse collapse-plus bg-base-100 border border-base-300 space-y-3"> 
+  <input type="radio" name="my-accordion-3" checked="checked" /> 
+
+  <div class="collapse-title font-semibold">
+    How can I start learning English on this website?
+  </div> 
+
+  <div class="collapse-content text-sm">
+    You can start learning English by exploring our vocabulary lessons, practicing new words, listening to their pronunciation, and completing interactive exercises.
+  </div> 
+</div>
+
+<div class="collapse collapse-plus bg-base-100 border border-base-300 space-y-3"> 
+  <input type="radio" name="my-accordion-3" /> 
+
+  <div class="collapse-title font-semibold">
+    Is this website free to use?
+  </div> 
+
+  <div class="collapse-content text-sm">
+    Yes, you can use the vocabulary lessons and practice features for free and start improving your English vocabulary right away.
+  </div> 
+</div>
+
+<div class="collapse collapse-plus bg-base-100 border border-base-300 space-y-3"> 
+  <input type="radio" name="my-accordion-3" /> 
+
+  <div class="collapse-title font-semibold">
+    Do I need to create an account?
+  </div> 
+
+  <div class="collapse-content text-sm">
+    No, you can start learning and practicing English vocabulary without creating an account.
+  </div> 
+</div>
+
+<div class="collapse collapse-plus bg-base-100 border border-base-300 space-y-3"> 
+  <input type="radio" name="my-accordion-3" /> 
+
+  <div class="collapse-title font-semibold">
+    How can I build my English vocabulary?
+  </div> 
+
+  <div class="collapse-content text-sm">
+    You can build your vocabulary by learning new words regularly, reviewing their meanings and pronunciations, and practicing them through different lessons and exercises.
+  </div> 
+</div>
+
+<div class="collapse collapse-plus bg-base-100 border border-base-300 space-y-3"> 
+  <input type="radio" name="my-accordion-3" /> 
+
+  <div class="collapse-title font-semibold">
+    Can I listen to the pronunciation of a word?
+  </div> 
+
+  <div class="collapse-content text-sm">
+    Yes, you can click the pronunciation button to listen to the correct pronunciation of a word and improve your speaking skills.
+  </div> 
+</div>
+       </section>
     </main>
     <!-- Footer Section -->
-    <footer></footer>
+     <footer  class="0  my-10">
+            <div class="w-11/12 mx-auto  flex flex-col md:flex-row justify-between  py-20 ">
+              <!-- Left side footer -->
+              <div>
+                <div class="flex  items-center gap-1">
+        <span class="text-3xl font-bold">English</span>
+        <img src="./assets/logo.png" alt="logo">
+        <span class="font-bangla text-3xl font-bold">জানালা</span>
+              </div>
+              <h3 class="font-bangla my-3 text-2xl">ইংরেজি শিখুন সহজে</h3>
+              <p >Providing ED-Tech Applications since 2025</p>
+              </div>
+              <!-- right side footer -->
+              <div>
+                <h2 class="text-2xl font-bold">Follow Us</h2>
+                <div class="text-3xl">
+
+
+                 <a
+  href="https://www.facebook.com/zayan.shanto"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fa-brands fa-facebook"></i>
+</a>
+ <i class="fa-brands fa-youtube"></i>
+ <i class="fa-brands fa-instagram"></i>
+ <i class="fa-brands fa-github"></i>
+                
+                </div>
+              </div>
+            </div>
+        </footer>
 
     <script src="./script/index.js"></script>
 </body>
